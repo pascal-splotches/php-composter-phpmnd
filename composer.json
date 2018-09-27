@@ -1,5 +1,5 @@
 {
-  "name": "splotches/php-composter-phpmd",
+  "name": "splotches/php-composter-phpmnd",
   "description": "Automatically install a git pre-commit hook to check your PHP files upon each commit to make sure they follow the rules defined in phpmd.xml.",
   "type": "php-composter-action",
   "require": {
