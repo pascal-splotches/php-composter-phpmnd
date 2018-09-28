@@ -138,7 +138,7 @@ class Action extends BaseAction
      */
     protected function parseArgumentsFromConfiguration()
     {
-        $configuration = json_decode(file_get_contents($this->getPhpMndConfigurationPath()));
+        $configuration = json_decode(file_get_contents($this->getPhpMndConfigurationPath()), true);
 
         if (json_last_error() !== JSON_ERROR_NONE) {
             throw new RuntimeException("JSON Decode Error: " . json_last_error_msg());
